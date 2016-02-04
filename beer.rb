@@ -1,7 +1,7 @@
 class Beer
 
   attr_reader :size
-  attr_accessor :brand, :source
+  attr_accessor :source
 
   def initialize(source = "tap")
     @source = source
