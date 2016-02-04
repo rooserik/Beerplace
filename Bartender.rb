@@ -3,9 +3,13 @@ class Bartender < Person
     super
     @beersold=[]
   end
-  def sells (beer)
-    @beersold << Beer.new
+
+  def sells(customer)
     puts "here you go!"
     customer.takebeer(Beer.new)
+    @beersold << @beers_had
+    puts "#{@beersold}"
   end
+
+
 end

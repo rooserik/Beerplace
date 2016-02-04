@@ -1,5 +1,9 @@
-require "./beer.rb"
+require "./Beer.rb"
+require "./Person.rb"
+require "./Bartender.rb"
+require "./Customer.rb"
 
-beer1 = Beer.new("tap")
+jan = Customer.new("Jan")
+joe = Bartender.new("Joe")
 
-beer1.drink!
+joe.sells(jan)
