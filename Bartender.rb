@@ -6,9 +6,10 @@ class Bartender < Person
 
   def sells(customer)
     puts "here you go!"
-    customer.takebeer(Beer.new)
-    @beersold << @beers_had
-    puts "#{@beersold}"
+    beer = Beer.new
+    customer.takebeer(beer)
+    @beersold << beer
+    puts "#{beer}"
   end
 
 
