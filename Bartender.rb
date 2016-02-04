@@ -5,6 +5,7 @@ class Bartender < Person
   end
 
   def what_beer_would_you_like
+
     puts "Would you like tap or bottle?"
     choice = gets.chomp
     return choice

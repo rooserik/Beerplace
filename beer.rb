@@ -9,7 +9,7 @@ class Beer
   end
 
   def drink!
-    if @size > 0
+    while @size > 0
       is_full
       sleep 1
       puts "Slorp.."
