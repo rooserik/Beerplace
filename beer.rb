@@ -21,11 +21,11 @@ class Beer
 
   def is_full
     if @size === 250
-      what_kind_of_beer
+      sound
     end
   end
 
-  def what_kind_of_beer
+  def sound
     if @source == "tap"
       puts "*foaming*"
     elsif @source == "bottle"

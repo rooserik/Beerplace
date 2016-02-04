@@ -4,12 +4,17 @@ class Bartender < Person
     @beersold=[]
   end
 
+  def what_beer_would_you_like
+    puts "Would you like tap or bottle?"
+    choice = gets.chomp
+    return choice
+  end
+
   def sells(customer)
-    puts "here you go!"
-    beer = Beer.new
+    beer = Beer.new(what_beer_would_you_like)
+    puts "Here you go!"
     customer.takebeer(beer)
     @beersold << beer
-    puts "#{beer}"
   end
 
 

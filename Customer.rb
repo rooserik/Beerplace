@@ -5,8 +5,9 @@ class Customer < Person
   end
 
   def takebeer(beer)
-    @beers_had << beer
     puts "Ahhh, thank you"
+    beer.drink!
+    @beers_had << beer
   end
 
   def sings
